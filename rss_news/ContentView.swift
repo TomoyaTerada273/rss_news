@@ -1,5 +1,6 @@
 //  アプリのメインビューであるContentView構造体を定義
 //  タブバーとそれぞれのタブに対応するビューを管理
+// https://blog.smartbank.co.jp/entry/2024/04/01/101535 ここを参考にしたい
 //
 //  ContentView.swift
 //  rss_news

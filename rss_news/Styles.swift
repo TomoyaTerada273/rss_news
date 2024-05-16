@@ -12,6 +12,8 @@ struct NewsItemTitleStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.headline)
+            .fixedSize(horizontal: false, vertical: true)
+            .foregroundColor(.primary)
     }
 }
 
@@ -20,6 +22,7 @@ struct NewsItemPubDateStyle: ViewModifier {
         content
             .font(.subheadline)
             .foregroundColor(.gray)
+            .fixedSize(horizontal: false, vertical: true)
     }
 }
 
@@ -28,6 +31,7 @@ struct NewsItemDescriptionStyle: ViewModifier {
         content
             .font(.body)
             .lineLimit(0)
+            .foregroundColor(.primary)
     }
 }
 
