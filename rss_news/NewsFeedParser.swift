@@ -82,7 +82,9 @@ class NewsFeedParser: NSObject, XMLParserDelegate, ObservableObject {
                 imageUrl: currentImageUrl
             )
             DispatchQueue.main.async {
-                self.newsItems.append(newsItem)
+                if !self.newsItems.contains(where: { $0.link == newsItem.link }) {
+                    self.newsItems.append(newsItem)
+                }
             }
         }
     }

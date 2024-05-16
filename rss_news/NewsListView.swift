@@ -29,7 +29,7 @@ struct NewsListView: View {
                                     ProgressView()
                                 case .success(let image):
                                     image.resizable()
-                                         .aspectRatio(contentMode: .fit)
+                                        .aspectRatio(contentMode: .fit)
                                 case .failure:
                                     Image(systemName: "photo")
                                 @unknown default:
@@ -44,9 +44,14 @@ struct NewsListView: View {
                 }
             }
             .navigationTitle("News")
+            .refreshable {
+                newsFeedParser.parseFeed(url: feedUrl) { _ in }
+            }
         }
         .onAppear {
-            newsFeedParser.parseFeed(url: feedUrl) { _ in }
+            if newsFeedParser.newsItems.isEmpty {
+                newsFeedParser.parseFeed(url: feedUrl) { _ in }
+            }
         }
     }
 }
