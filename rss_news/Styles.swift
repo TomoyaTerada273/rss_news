@@ -27,7 +27,7 @@ struct NewsItemDescriptionStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.body)
-            .lineLimit(3)
+            .lineLimit(0)
     }
 }
 

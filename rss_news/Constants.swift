@@ -10,14 +10,14 @@
 import Foundation
 
 struct Constants {
-    static let worldNewsFeedUrl = "https://news.yahoo.co.jp/rss/topics/world.xml"
-    static let domesticNewsFeedUrl = "https://news.yahoo.co.jp/rss/topics/domestic.xml"
-    static let businessNewsFeedUrl = "https://news.yahoo.co.jp/rss/topics/business.xml"
-    static let technologyNewsFeedUrl = "https://news.yahoo.co.jp/rss/topics/it.xml"
-    static let entertainmentNewsFeedUrl = "https://news.yahoo.co.jp/rss/topics/entertainment.xml"
-    static let sportsNewsFeedUrl = "https://news.yahoo.co.jp/rss/topics/sports.xml"
-    static let scienceNewsFeedUrl = "https://news.yahoo.co.jp/rss/topics/science.xml"
-    static let lifeNewsFeedUrl = "https://news.yahoo.co.jp/rss/topics/life.xml"
-    static let localNewsFeedUrl = "https://news.yahoo.co.jp/rss/topics/local.xml"
+    static let worldNewsFeedUrl = "https://news.yahoo.co.jp/rss/categories/world.xml"
+    static let domesticNewsFeedUrl = "https://news.yahoo.co.jp/rss/categories/domestic.xml"
+    static let businessNewsFeedUrl = "https://news.yahoo.co.jp/rss/categories/business.xml"
+    static let technologyNewsFeedUrl = "https://news.yahoo.co.jp/rss/categories/it.xml"
+    static let entertainmentNewsFeedUrl = "https://news.yahoo.co.jp/rss/categories/entertainment.xml"
+    static let sportsNewsFeedUrl = "https://news.yahoo.co.jp/rss/categories/sports.xml"
+    static let scienceNewsFeedUrl = "https://news.yahoo.co.jp/rss/categories/science.xml"
+    static let lifeNewsFeedUrl = "https://news.yahoo.co.jp/rss/categories/life.xml"
+    static let localNewsFeedUrl = "https://news.yahoo.co.jp/rss/categories/local.xml"
 }
 
